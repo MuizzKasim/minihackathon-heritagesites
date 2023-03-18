@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alatsi:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    /*outline: 1px solid red;*/
+}
+
+/*   HEADER SECTION   */
+
+header{
+    position:absolute;
+    top:0;
+    left: 0;
+    max-width:100vw;
+    padding: 10px 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+@media (max-width: 1020px){
+    .top-header_Navigators{
+        display:none;
+    }
+}
+
+.top-header{
+    position:sticky;
+    background-color:whitesmoke;
+    z-index=1;
+    box-shadow: 2px 5px 10px 1px #555555;
+}
+
+.logo img{
+    width: 6vh;
+}
+
+.top-header_Span{
+    position:relative;
+    top: -18px;
+    font-family: 'Alatsi', sans-serif;
+    font-size:1.2rem;
+    
+    color:	#1B1212;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style:none;
+    margin-left: 15px;
+}
+
+header ul li a{
+    text-decoration:none;
+    padding: 5px 5px;
+    color:darkslategrey;
+    border-radius:30px;
+}
+
+header ul li a:hover{
+    color:black;
+    background:lightgrey;
+}
+
+header ul li a.active-page{
+    background:lightgrey;
+    border-radius: 30px;
+}
+
+/*   BODY SECTION   */
+
+body{
+    position:relative;
+    margin:0;
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #04AA6B;
+    z-index: -2;
+}
+
+.backdrop{
+    position:relative;
+    height:100%;
+    width:80%;
+    left:10%;
+    transform: translate(-100v,px);
+    background-color: whitesmoke;
+    z-index:-1;
+    box-shadow: 2px 5px 10px 1px #555555;
+}
+
+section{
+    position:relative;
+    padding: 50px;
+    min-height: 70vh;
+}
+
+
+.welcoming-message{
+    margin-left: 120px;
+    transform: translateY(60px);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.title{
+    display:flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.discover-button{
+    border: 2px solid black;
+    padding:5px;
+    text-decoration: none;
+    color: darkslategray;
+}
+
+.header-font-format{
+    font-size:3rem;
+}
+
+.paragraph-font-format{
+    font-size:1.4rem;
+}
+
+/*  CONTAINERS  */
+
+.title-container{
+    width:200px;
+    height:400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    margin:0;
+    padding:0;
+    border:none;
+    font-size:18rem;
+    font-stretch:ultra-condensed;
+    -webkit-background-clip:text;
+    font-weight: 900;
+    color:transparent;
+}
+
+.title-container:nth-child(1){
+    background-image: url('MiniHackathon assets/bruneitourism.com/soas-boat.jpg');
+    background-position:  -25% 35%;
+}
+.title-container:nth-child(2){
+    background-image: url('MiniHackathon assets/bruneitourism.com/kampong-ayer-boat.jpg');
+    background-position: 42% -100%;
+}
+.title-container:nth-child(3){
+    background-image: url('MiniHackathon assets/bruneitourism.com/labi.jpg');
+    background-position:  52% -60%;
+}
+.title-container:nth-child(4){
+    background-image: url('MiniHackathon assets/reduper.com/temburong-bridge.jpg');
+    background-position:  60% -30%;
+}
+.title-container:nth-child(5){
+    background-image: url('MiniHackathon assets/wikimedia.commons/jame-asr-interior.jpg');
+    background-position:  38% 76%;
+}
+.title-container:nth-child(6){
+    background-image: url('MiniHackathon assets/bruneitourism.com/ulu-temburong.jpg');
+    background-position:  115% 50%;
+}
+.imgcard-name-border{
+    height:500px;
+    width:500px;
+    overflow:hidden;
+    background-color:white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display:inline-block;
+    text-align: center;
+    margin:45px;
+}
+
+.imgcard-name-border img{
+    width:80%;
+    height:90%;
+    object-fit: cover;
+}
+
+.imgcard-name-text{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/*   FOOTER SECTION   */
+
+
+.bottom-footer{
+    position:relative;
+    width:100%;
+    left:0;
+    height:auto 
+    bottom:0;
+    padding:20px;
+    background:#333;
+}
+
+
+.bottom-footer_Socials{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display:flex;
+    justify-content: center;
+    column-gap: 20px;
+    filter:invert();
+    mix-blend-mode:difference;
+}
+
+.bottom-footer_Socials img{
+    height: 35px; 
+}
+
+.bottom-footer_Navigators{
+    display:flex;
+    justify-content:center;
+    column-gap:40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bottom-footer ul{
+    display:flex;
+    justify-content:center;
+}
+
+.bottom-footer ul li{
+    list-style: none;
+}
+
+.bottom-footer ul li a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color:gainsboro;
+    line-height: 3;
+}
+
+.bottom-footer ul li a:first-of-type{
+    font-weight:700;
+    line-height:4;
+}
+.bottom-footer_Copyright{
+    color:darkgrey;
+    justify-content: center;
+    text-align: center;
+}
